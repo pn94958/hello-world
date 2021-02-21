@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    string sayit;
+    sayit = "Hello World!";
+    cout << sayit << endl;
     return 0;
 }
