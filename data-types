@@ -1,0 +1,23 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int ident;
+    string name;
+    char examgrade;
+    double gpa;
+    bool accepted;
+
+    ident = 39488312;
+    name = "Bob";
+    examgrade = 'A';
+    gpa = 4.7;
+    accepted = false;
+
+    cout << "Candidate id: " << ident << " ." << endl;
+    cout << "Candidate name: " << name << "." << endl;
+    cout << "Exam grade is: " << examgrade << " and GPA is: " << gpa << "." << endl;
+    // cout << "Acceptation: " << accepted << "." << endl;  // note: revisit when learning conditional operations
+}
