@@ -1,0 +1,74 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+void write1(string text)
+{
+    cout << "@3jwkjlejkw!!!!!\n";
+    cout << text[0] << ".\n";
+}
+
+void write2(string text2, string text1)  // things are input in reverse order for some reason
+{
+    string text[3];
+    text1[0] = 'F';
+    text[0] = text1;
+    text[1] = text2.substr((text2.length() / 2), (text2.length()));
+    text[2] = ".sa;ls;kldl;as!!!!!!\n";
+    cout << text[0] << text[1] << text[2];
+}
+
+void calc1(double numb4, double numb3, double numb2, double numb1)  // things are input in reverse order for some reason
+{
+    double numb[4];
+    numb[0] = numb1;
+    numb[1] = numb2;
+    numb[2] = numb3;
+    numb[3] = numb4;
+
+    cout << fmin(numb[0], fmin(numb[1], fmin(numb[2], numb[3]))) << " Lowest Number\n"
+    << numb[0] << "^5 " << pow(numb[0], 5) << endl
+    << "Sqrt of " << numb[1] << " " << sqrt(numb[1]) << endl
+    << numb[2] << " rounded up " << ceil(numb[2]) << endl
+    << numb[3] << " rounded down " << floor(numb[3]) << endl;
+
+    cout << "kfds;klds;klds;klds;kldskl;!!!!!!!";
+    int rounded1;
+    int rounded2;
+    rounded1 = round(fmax(numb[0], fmax(numb[1], fmax(numb[2], numb[3]))));
+    rounded2 = round(fmin(numb[0], fmin(numb[1], fmin(numb[2], numb[3]))));
+    if (rounded2 != 0) {
+        numb[0] = rounded1 % rounded2;
+    } else { numb[0] = rounded1; }
+    
+    cout << numb[0] + fmax(numb[0], fmin(numb[1], fmin(numb[2], numb[3]))) << endl;
+}
+
+
+string gettext()
+{
+    string gtext;
+    cout << "Write a string:\n";
+    cin >> gtext;
+
+    return gtext;
+}
+
+double getnumb()
+{
+    double gnumb;
+    cout << "Write a number:\n";
+    cin >> gnumb;
+
+    return gnumb;
+}
+
+
+int main()
+{
+    write1(gettext());
+    write2(gettext(), gettext());
+    calc1(getnumb(), getnumb(), getnumb(), getnumb());
+    return 0;
+}
